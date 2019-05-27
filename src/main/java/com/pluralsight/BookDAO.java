@@ -92,10 +92,10 @@ public class BookDAO {
     }
 
     public void  deleteBook (int id) {
-        String SQL = "DELETE FROM book where id = ?";
+        String sql = "DELETE FROM book where id = ?";
 
         try {
-            PreparedStatement statement = jdbcConnection.prepareStatement(SQL);
+            PreparedStatement statement = jdbcConnection.prepareStatement(sql);
             statement.setInt(1, id);
             statement.executeUpdate();
             statement.close();
