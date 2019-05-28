@@ -23,7 +23,7 @@ public class ControllerServlet extends HttpServlet {
 		private DBConnection dbConnection;
 
 		@Inject
-    private BookDAO bookDAO;
+    	private BookDAO bookDAO;
     /**
      * @see HttpServlet#HttpServlet()
      */
