@@ -25,8 +25,7 @@ import java.io.*;
 public class Module3_Task1_thru_5_IT {
 
     static Method method = null;
-    static String sql = "UPDATE book SET title = ?, author = ?, price = ?" +
-               " WHERE id = ?";
+    static String sql = "UPDATE book SET title = ?, author =?, price =? WHERE id =?";
     Connection spyConnection;
     PreparedStatement mockStatement;
     static BookDAO bookDAO;

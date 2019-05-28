@@ -54,7 +54,7 @@ public class Module3_Task6_and_7_IT extends Mockito{
 			response = mock(HttpServletResponse.class);
 			try {
 				when(request.getPathInfo()).thenReturn("/update");
-				//PowerMockito.doNothing().when(controllerServlet, "updateBook", request, response);
+				PowerMockito.doNothing().when(controllerServlet, "updateBook", request, response);
 				when(request.getParameter("id")).thenReturn(tempID);
 			} catch (MethodNotFoundException e) {}
 			try {
